@@ -256,4 +256,10 @@ input #choice{
     .form1{
         width: 85%;
     }
+    .footer1{
+        padding: 5px 0px;
+    }
+    .footer2{
+        flex-direction: column;
+    }
     }
