@@ -102,8 +102,11 @@
                 <div class="group7-2">
                     <label for="phone">Téléphone</label>
                     <input type="tel" id="phone" name="phone" required>
-                </div>
+                </div>   
             </div>
+            <div class="button-mobile">
+                <button type="button" class="submit-button-mobile">Suivant</button>
+            </div> 
             </div>
             <div class="reglement">
                 <h1>Mon règlement</h1>
@@ -116,18 +119,20 @@
                     </select>
                 </div>
                 <div class="part2">
+                    <label for="">Sélectionnez le Montant</label>
                     <div class="payment-options">
+                        
                         <button class="red">
-                            <h3>000 €</h3>
-                            <p>Offrez des repas à des familles en situation de précarité</p>
+                            <h3>15 €</h3>
+                            <p>1 mois de repas équilibrés pour un enfant.</p>
                         </button>
-                        <button class="green">
-                            <h3>000 €</h3>
-                            <p>Aidez à équiper des écoles et à financer l'éducation des enfants.</p>
+                        <button class="green active">
+                            <h3>25 €</h3>
+                            <p>1 session de sensibilisation à l’exploitation.</p>
                         </button>
                         <button type="button" class="yellow">
-                            <h3>000 €</h3>
-                            <p>Contribuez à fournir des soins médicaux dans les zones défavorisées.</p>
+                            <h3>30 €</h3>
+                            <p>1 kit d’hygiène pour un enfant en centre d’accueil.</p>
                         </button>
                         <div class="choice">
                             <h3>Je choisis</h3>
@@ -137,8 +142,9 @@
                     </div>
                     <button type="button" class="submit-button">Suivant</button>
                 </div>
+            </div>  
         </form> 
-            </div>         
+                   
     </div>
 </div>
 <footer style="padding-top: 90px;">
@@ -174,10 +180,10 @@
             <input type="text" placeholder="Prenom" style="padding: 10px; width: 80%; border: 1px solid #252525; border-radius: 1px;">
             <input type="text" placeholder="Nom*" style="padding: 10px; width: 80%; border: 1px solid #252525; border-radius: 1px;" required>
             <input type="email" placeholder="Email*" style="padding: 10px; width: 80%; border: 1px solid #252525; border-radius: 1px;" required>
-            <div style="display: flex; justify-content: space-between; align-items: center; width: 80%;">
+            <div style="display: flex; justify-content: space-between; align-items: center; width: 80%;" class="button-send">
                 <div style="flex: 1;">
                     <input type="checkbox" required>
-                    <label style="margin-left: 10px;">En cochant cette case, vous acceptez notre <span style="text-decoration: underline; color: #BD4E38;">Politique de confidentialité.</span></label>
+                    <label style="margin-left: 10px;display: inline;">En cochant cette case, vous acceptez notre <span style="text-decoration: underline; color: #BD4E38;">Politique de confidentialité.</span></label>
                 </div>
                 <button type="submit" style="padding: 10px 20px; font-family: Inter; font-size: 16px; background-color: #BD4E38; color: white; border: none; cursor: pointer;">Envoyer</button>
             </div>
