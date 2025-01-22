@@ -1,0 +1,259 @@
+/* Basic CSS Structure */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #fff7d6;
+
+}
+.logo {
+    padding-left: 100%;
+    padding: 20px 0;
+}
+.nav-item {
+    margin-right: 10%;
+}
+
+.nav-item a {
+    color: #000;
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.nav-donate a {
+    text-decoration: none;
+    color: #FFF;
+
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 204px;
+    height: 94px;
+    flex-shrink: 0;
+    background: #BD4E38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner {
+    background-image: url("banniere.png");
+    background-position: center;
+    background-color: #000;
+    background-size: cover;
+    height: 300px;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.banner h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.breadcrumb {
+    padding-top: 40px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0px;
+}
+.content h1 {
+    color: #c94a3d;   
+    font-size: 48px;
+}
+.form1 {
+    margin: 10px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+    width: 900px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group1, .form-group2, .form-group3, .form-group4, .form-group5, .form-group6, .form-group7, .form-group8 {
+    margin-bottom: 5px;
+}
+
+.form-group6, .form-group7 {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+.group6-1, .group6-2{
+    width:50%;
+}
+.group7-1, .group7-2{
+    width:50%;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 5px;
+    display: block;
+}
+
+#civility, #firstname, #lastname, #email, #address, #city, #country, #phone,#payment{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#code-postal{
+    width: 100%;
+    padding: 10px 0px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.reglement{
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.payment-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.payment-card {
+    padding: 20px;
+    text-align: center;
+}
+.payment-options button{
+    border: none;
+}
+button.red:hover, button.green:hover, button.yellow:hover {
+    cursor: pointer;
+   
+
+}
+.red {
+    background-color: #c94a3d;
+    color: #fff;
+    padding: 20px;
+}
+
+.green {
+    background-color: #d6f5d6;
+    color: #000;
+    padding: 20px;
+}
+
+.yellow {
+    background-color: #fff7d6;
+    color: #c94a3d;
+    padding: 20px;
+}
+
+.choice {
+    text-align: left;
+    padding: 20px;
+    font-style: italic;
+    border: 1px solid #ddd;
+    background-color: #000;
+    color: #fff;
+}
+input #choice{
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 5px;
+    background-color: #b53636;
+    color: #8e2626;
+}
+
+.submit-button {
+    background-color: #c94a3d;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    width: 25%;
+}
+.part2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.submit-button:hover {
+    background-color: #a33a30;
+}
+
+@media (max-width: 768px) {
+    .nav-item, .nav-donate {
+        visibility: hidden;
+    }
+    
+    .content{
+        flex-direction: column-reverse;
+        padding-top: 0px;
+    }
+    .content h1 { 
+        font-size: 28px;
+    }
+    .reglement{
+        width: 95%;
+    }
+    .part2{
+
+    }
+    .payment-options{
+
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    #payment{
+        width: 100%;
+    }
+    .red {
+        width: 28%;
+        padding: 5px;
+    }
+    .green {
+        padding: 5px;
+        width: 28%;
+    }
+    
+    .yellow {
+        padding: 5px;
+        width: 28%;
+    }
+    .choice {
+        padding: 15px;
+        width: 70%;
+    }
+    .submit-button{
+        width: 50%;
+        visibility: hidden;
+    }
+    .form1{
+        width: 85%;
+    }
+    }
